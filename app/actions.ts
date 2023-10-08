@@ -98,7 +98,7 @@ export async function youtubeVideoDownloadAction(
   console.log(itag, videoLink);
 
   const videoFileName = uuidv4();
-  const outputPath = `public/videos/${videoFileName}-video.mp4`;
+  const outputPath = path.join(process.cwd(), `public/videos/${videoFileName}-video.mp4`);
   
   try {
     await new Promise((resolve, reject) => {
