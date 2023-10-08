@@ -66,7 +66,6 @@ export async function youtubeVideoFormatsAction(
       videoLink,
     };
   } catch (error: unknown) {
-    console.log(error);
 
     if (Object(error).hasOwnProperty("errors")) {
       return {
@@ -78,7 +77,6 @@ export async function youtubeVideoFormatsAction(
       message: (error as Error)?.message ?? "Something went wrong",
     };
   }
-  //
 }
 
 const downloadVideoSchema = z.object({

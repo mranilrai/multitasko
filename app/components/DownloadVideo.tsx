@@ -32,6 +32,9 @@ export default function DownloadVideo({
         }
     }, [title, state.videoDownloadPath]);
 
+    console.log(state);
+    
+
     return (
         <form action={formAction}>
             <input type="text" name="itag" hidden value={format.itag} readOnly />

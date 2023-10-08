@@ -18,7 +18,6 @@ export default function YTVideoInfo() {
     youtubeVideoFormatsAction,
     initialState
   );
-  console.log({ state });
 
   return (
     <div className="max-w-2xl w-full mx-auto">
