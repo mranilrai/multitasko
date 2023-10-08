@@ -122,6 +122,7 @@ export async function youtubeVideoDownloadAction(
   } catch (error) {
     return {
       message: (error as Error)?.message ?? "Something went wrong",
+      error
     };
   }
 }
